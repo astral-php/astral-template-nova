@@ -1,0 +1,41 @@
+{
+  "name": "astral-php/astral-template-nova",
+  "version": "1.0.0",
+  "description": "Nova-based layouts and reusable PHP view partials for Astral applications.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/astral-php/astral-template-nova",
+  "support": {
+    "source": "https://github.com/astral-php/astral-template-nova",
+    "issues": "https://github.com/astral-php/astral-template-nova/issues"
+  },
+  "keywords": [
+    "astral",
+    "php",
+    "template",
+    "nova",
+    "layouts",
+    "partials"
+  ],
+  "require": {
+    "php": "^8.3",
+    "astral-php/astral-nova-css": "^1.0",
+    "astral-php/astral-nova-icons": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6 || ^10.5 || ^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Astral\\TemplateNova\\": "src/Astral/TemplateNova/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Astral\\TemplateNova\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit tests/"
+  }
+}
